@@ -1,7 +1,9 @@
+import RouterMain from "./routes/RouterMain";
+
 const App = () => {
   return (
     <>
-      <h1>App</h1>
+      <RouterMain />
     </>
   );
 };
