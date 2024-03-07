@@ -1,4 +1,4 @@
-const Input = (label, type, placeholder) => {
+const Input = ({ label, type, placeholder }) => {
   return (
     <>
       <div>
