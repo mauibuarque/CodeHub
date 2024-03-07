@@ -1,7 +1,9 @@
+import { Header } from "../../components";
+
 const RegisterPage = () => {
   return (
     <>
-      <h1>Register</h1>
+      <Header />
     </>
   );
 };
