@@ -1,4 +1,4 @@
-import { Header, Input } from "../../components";
+import { Header, Input, Select } from "../../components";
 
 const RegisterPage = () => {
   return (
@@ -35,6 +35,17 @@ const RegisterPage = () => {
           label={"Contato"}
           type={"text"}
           placeholder={"Opção de Contato"}
+        />
+        <Select
+          label={"Selecionar módulo"}
+          options={[
+            "Primeiro módulo",
+            "Segundo módulo",
+            "Terceiro módulo",
+            "Quarto módulo",
+            "Quinto módulo",
+            "Sexto módulo",
+          ]}
         />
       </form>
     </>
