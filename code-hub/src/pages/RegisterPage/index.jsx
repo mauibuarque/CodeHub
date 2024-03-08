@@ -12,40 +12,28 @@ const RegisterPage = () => {
           <p>Rápido e grátis, vamos nessa</p>
         </div>
 
+        <Input label="Nome" type="text" placeholder="Digite aqui seu nome" />
+
+        <Input label="Email" type="text" placeholder="Digite aqui seu email" />
+
         <Input
-          label={"Nome"}
-          type={"text"}
-          placeholder={"Digite aqui seu nome"}
+          label="Senha"
+          type="password"
+          placeholder="Digite aqui sua senha"
         />
 
         <Input
-          label={"Email"}
-          type={"text"}
-          placeholder={"Digite aqui seu email"}
+          label="Confirmar Senha"
+          type="password"
+          placeholder="Confirme sua senha"
         />
 
-        <Input
-          label={"Senha"}
-          type={"password"}
-          placeholder={"Digite aqui sua senha"}
-        />
+        <Input label="Bio" type="text" placeholder="Fale sobre você" />
 
-        <Input
-          label={"Confirmar Senha"}
-          type={"password"}
-          placeholder={"Confirme sua senha"}
-        />
-
-        <Input label={"Bio"} type={"text"} placeholder={"Fale sobre você"} />
-
-        <Input
-          label={"Contato"}
-          type={"text"}
-          placeholder={"Opção de Contato"}
-        />
+        <Input label="Contato" type="text" placeholder="Opção de Contato" />
 
         <Select
-          label={"Selecionar módulo"}
+          label="Selecionar módulo"
           options={[
             "Primeiro módulo",
             "Segundo módulo",
@@ -56,7 +44,7 @@ const RegisterPage = () => {
           ]}
         />
 
-        <Button buttonValue={"Cadastrar"} onClickFunction={handleRegister} />
+        <Button buttonValue="Cadastrar" onClickFunction={handleRegister} />
       </form>
     </>
   );
