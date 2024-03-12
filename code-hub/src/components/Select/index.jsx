@@ -5,8 +5,8 @@ const Select = ({ label, options }) => {
         <label>{label}</label>
         <select>
           {options.map((option) => (
-            <option key={option} value={option}>
-              {option}
+            <option key={option.name} value={option}>
+              {option.name}
             </option>
           ))}
         </select>

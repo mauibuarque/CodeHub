@@ -1,5 +1,7 @@
 import { Button, Input, Select } from "../../index";
 
+import moduleOptions from "./moduleOptions";
+
 const RegisterForm = () => {
   const handleRegister = () => {};
 
@@ -30,17 +32,7 @@ const RegisterForm = () => {
 
       <Input label="Contato" type="text" placeholder="Opção de Contato" />
 
-      <Select
-        label="Selecionar módulo"
-        options={[
-          "Primeiro módulo",
-          "Segundo módulo",
-          "Terceiro módulo",
-          "Quarto módulo",
-          "Quinto módulo",
-          "Sexto módulo",
-        ]}
-      />
+      <Select label="Selecionar módulo" options={moduleOptions} />
 
       <Button buttonValue="Cadastrar" onClickFunction={handleRegister} />
     </form>
