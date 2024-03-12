@@ -1,11 +1,16 @@
 import { Button, Header, Input, Select } from "../../components";
 
+import { Link } from "react-router-dom";
+
 const RegisterPage = () => {
   const handleRegister = () => {};
 
   return (
     <>
-      <Header />
+      <Header>
+        <Link to="/login">Voltar</Link>
+      </Header>
+
       <form>
         <div>
           <h2>Crie sua conta</h2>

@@ -1,7 +1,8 @@
-const Header = () => {
+const Header = ({ children }) => {
   return (
     <>
       <h1>CodeHub</h1>
+      {children}
     </>
   );
 };
