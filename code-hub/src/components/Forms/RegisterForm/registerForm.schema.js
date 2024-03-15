@@ -20,8 +20,8 @@ const registerFormSchema = z
         "É necessário conter pelo menos um caracter especial."
       ),
     confirmPassword: z.string().min(1, "Confirmar a senha é obrigatório."),
-    bio: z.string(),
-    contact: z.string(),
+    bio: z.string().min(1, "Este campo é obrigatório."),
+    contact: z.string().min(1, "Este campo é obrigatório."),
     module: z.enum(moduleOptions),
   })
   .refine(({ password, confirmPassword }) => password === confirmPassword, {

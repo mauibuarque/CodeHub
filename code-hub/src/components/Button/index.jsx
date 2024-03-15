@@ -1,9 +1,7 @@
-const Button = ({ buttonValue, onClickFunction }) => {
+const Button = ({ buttonValue }) => {
   return (
     <>
-      <button type="submit" onClick={() => onClickFunction()}>
-        {buttonValue}
-      </button>
+      <button type="submit">{buttonValue}</button>
     </>
   );
 };

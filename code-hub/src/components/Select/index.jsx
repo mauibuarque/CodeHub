@@ -1,9 +1,11 @@
-const Select = ({ label, options }) => {
+import { forwardRef } from "react";
+
+const Select = forwardRef(({ label, options }, ref) => {
   return (
     <>
       <div>
         <label>{label}</label>
-        <select>
+        <select ref={ref}>
           {options.map((option) => (
             <option key={option.name} value={option}>
               {option.name}
@@ -13,6 +15,6 @@ const Select = ({ label, options }) => {
       </div>
     </>
   );
-};
+});
 
 export default Select;

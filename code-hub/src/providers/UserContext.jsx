@@ -7,7 +7,10 @@ const UserProvider = ({ children }) => {
 
   const userLogin = () => {};
 
-  const userRegister = () => {};
+  const userRegister = (payload, reset) => {
+    console.log(payload);
+    reset();
+  };
 
   const userLogout = () => {};
 
